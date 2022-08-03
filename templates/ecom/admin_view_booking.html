@@ -1,0 +1,70 @@
+{% extends 'ecom/admin_base.html' %}
+{% load static %}
+{% block content %}
+
+
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+  </style>
+</head>
+<div class="container">
+  <div class="panel panel-danger">
+    <div class="panel-heading">
+      <h6 class="panel-title">Total Orders</h6>
+    </div>
+    <table class="table table-hover table-bordered" id="dev-table">
+      <thead>
+        <tr>
+          <th>Customer</th>
+          <th>Contact</th>
+          <th>Shipping Address</th>
+          <th>Product</th>
+          <th>Image</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <!-- p for product, c for customer-->
+      {% for product,customer,order in data %}
+      <tr>
+        {% for c in customer %}
+        <td> {{c.get_name}}</td>
+        <td>{{c.mobile}}</td>
+        <td>{{order.address}}</td>
+
+        {% endfor %}
+        {% for p in product %}
+        <td> {{p.name}}</td>
+        <td> <img src="{% static p.product_image.url %}" alt="Profile Pic" height="40px" width="40px" /></td>
+        <td>{{order.status}}</td>
+        <td><a class="btn btn-primary btn-xs" href="{% url 'update-order' order.id  %}"><span class="glyphicon glyphicon-edit"></span></a>
+        <a class="btn btn-danger btn-xs" href="{% url 'delete-order' order.id  %}"><span class="glyphicon glyphicon-trash"></span></a></td>
+
+        {% endfor %}
+
+
+
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+<!--
+developed By : Naem Azam
+-->
+{% endblock content %}

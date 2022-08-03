@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>Admin Panel - Ecommerce</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <style type="text/css">
+    .bs-example {
+      margin: 0px;
+
+    }
+
+    .navbar-brand {
+      font-size: 20px;
+      font-family: sans-serif;
+
+    }
+
+        /*---------------------------------------
+           Social section
+        -----------------------------------------*/
+        footer {
+          padding: 0px 0px 0px 0px;
+          background-color: black;
+          margin: 0px;
+        }
+
+
+        #ftr {
+
+          padding: 20px;
+        }
+
+        .fa {
+
+          font-size: 23px;
+          width: 60px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+          border-radius: 50%;
+        }
+
+        .fa:hover {
+          opacity: 0.5;
+          text-decoration: none;
+        }
+
+        .fa-facebook {
+          background: #3B5998;
+          color: white;
+          margin-top: 30px;
+        }
+
+        .fa-whatsapp {
+          background: #25d366;
+          color: white;
+        }
+
+        .fa-twitter {
+          background: #55ACEE;
+          color: white;
+        }
+
+        .fa-instagram {
+          background: #125688;
+          color: white;
+        }
+
+        p {
+          text-align: center;
+
+        }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background:#343A40;">
+      <a href="/" class="navbar-brand">Admin Panel</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav">
+          <a href="/view-customer" class="nav-item nav-link">Customer</a>
+          <a href="/admin-view-booking" class="nav-item nav-link">View Orders</a>
+          <a href="/admin-products" class="nav-item nav-link">Manage Products</a>
+          <!-- <a href="/view-feedback" class="nav-item nav-link">Feedback</a> -->
+        </div>
+
+        <div class="navbar-nav navbar-right">
+          <a href="/logout" class="nav-item nav-link"> Logout</a>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+
+  <!-- content start-->
+  {% block content %}
+
+  {% endblock content %}
+  <!-- content end-->
+<br><br><br><br><br><br><br><br>
+  <!-- <footer>
+    <p>
+      <a id="ftr" href="#" class="fa fa-facebook"></a>
+      <a id="ftr" href="#" class="fa fa-whatsapp"></a>
+      <a id="ftr" href="#" class="fa fa-instagram"></a>
+      <a id="ftr" href="#" class="fa fa-twitter"></a>
+    </p>
+
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div style="color:#ffffff;" class="wow fadeInUp footer-copyright">
+            <p>
+              Copyright &copy; 2022 Developed by naem azam </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+ <!--
+developed By : Naem Azam
+-->
+</body>
+</html>

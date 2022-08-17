@@ -64,28 +64,28 @@ Create Virtual Environment
 
 For Windows
 ```
-$  python -m venv venv
+ python -m venv venv
 ```
 For Mac
 ```
-$  python3 -m venv venv
+python3 -m venv venv
 ```
 
 Activate Virtual Environment
 
 For Windows
 ```
-$  source venv/scripts/activate
+source venv/scripts/activate
 ```
 
 For Mac
 ```
-$  source venv/bin/activate
+source venv/bin/activate
 ```
 
 **3. Install Requirements from 'requirements.txt'**
 ```
-$  pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 **4. make database migrations**

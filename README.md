@@ -1,6 +1,6 @@
 # Ecommerce WebApp Using Django Framework
 
-![Logo](./Student%20information%20system.jpg)
+![Logo](gitimg/1.PNG)
 
 A simple project based on an Online Ecommerce Site that uses Python with Django Web Framework. Following Django project contains all the important features which can be in use for the second year IT students for their college projects. It has a number of important features(codeastro.com) that will allow the users to shop online, manage orders, and more. This system as well as the website’s concept is all clear, it’s the same as real-life scenarios and well-implemented on it. 
 
@@ -115,9 +115,10 @@ $ python3 manage.py runserver
 
 ## Screenshots
 
-![Admin Page](./1.PNG)
-![Stuff Page](./3.PNG)
-![student Page](./4.PNG)
+![Admin Page](gitimg/2.PNG)
+![Stuff Page](gitimg/3.PNG)
+![student Page](gitimg/4.PNG)
+![student Page](gitimg/5.PNG)
 
 
 
